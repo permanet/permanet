@@ -44,7 +44,7 @@ export default function Layout({ children }) {
       <footer className="footer">
         <div className="container">
           Permanet — Open source, AGPL-3.0 licensed. Cryptographic web archiving for the public record.{' '}
-          <a href="https://github.com/eshaghoff/permanet" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
+          <a href="https://github.com/permanet/permanet" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
             View on GitHub
           </a>
         </div>

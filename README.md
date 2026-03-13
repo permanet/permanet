@@ -26,7 +26,7 @@ Anyone can verify a capture independently using only the hash and the Bitcoin bl
 
 ```bash
 # Clone
-git clone https://github.com/eshaghoff/permanet.git
+git clone https://github.com/permanet/permanet.git
 cd permanet
 
 # Backend

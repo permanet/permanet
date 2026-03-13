@@ -108,7 +108,7 @@ ots verify -d <root_hash> proof.ots`}</pre>
         Yes. Permanet's capture, hashing, and verification pipeline is fully
         open source under AGPL-3.0. You can verify exactly how captures are
         created and confirmed — no black boxes.{' '}
-        <a href="https://github.com/eshaghoff/permanet" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/permanet/permanet" target="_blank" rel="noopener noreferrer">
           View on GitHub
         </a>
       </p>
@@ -137,7 +137,7 @@ ots verify -d <root_hash> proof.ots`}</pre>
         }}
       >
         Open source. AGPL-3.0 licensed. Built for the public record.{' '}
-        <a href="https://github.com/eshaghoff/permanet" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
+        <a href="https://github.com/permanet/permanet" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
           View on GitHub
         </a>
       </p>
