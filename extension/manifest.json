@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Permanet — Web Archive",
+  "version": "1.0.0",
+  "description": "Capture and cryptographically verify any web page. Archive what you see, prove it existed.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://thepermanet.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Archive this page"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

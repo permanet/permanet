@@ -1,0 +1,21 @@
+Archive any web page with cryptographic proof.
+
+Permanet captures exactly what you see in your browser — including authenticated pages, paywalled content, and private accounts — and creates a tamper-proof record with SHA-256 hashing and Bitcoin timestamping.
+
+How it works:
+1. Click the Permanet icon on any page
+2. The extension captures a full screenshot and the page DOM
+3. Your archive is hashed, timestamped, and stored permanently on Arweave
+
+Perfect for journalists, researchers, legal professionals, and anyone who needs verifiable proof of what appeared on a web page at a specific point in time.
+
+Features:
+- One-click archiving from your browser toolbar
+- Captures the page exactly as you see it (including content behind logins)
+- SHA-256 content hashing for tamper detection
+- Bitcoin-anchored timestamps via OpenTimestamps
+- Permanent decentralized storage on Arweave
+- Full verification page with cryptographic proof chain
+- Works on any website you can visit in your browser
+
+Visit thepermanet.com to verify any archive or learn more.

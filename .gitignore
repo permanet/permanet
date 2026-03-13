@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+captures/
+*.log
+.DS_Store
+arweave-wallet.json
+.claude/
+public/
+*.zip
