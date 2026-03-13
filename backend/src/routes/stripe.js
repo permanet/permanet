@@ -3,6 +3,8 @@ import { createHmac, timingSafeEqual } from 'crypto';
 import { v4 as uuidv4 } from 'uuid';
 import { requireAuth } from '../middleware/auth.js';
 import { query } from '../config/database.js';
+import { uploadToArweave } from '../services/arweave.js';
+import { join } from 'path';
 
 export const stripeRouter = Router();
 
@@ -236,6 +238,26 @@ stripeRouter.post('/webhook', async (req, res) => {
                VALUES ($1, $2, $3, $4, $5, $6, $7)`,
               [uuidv4(), userId, submissionId, session.payment_intent || session.id, 'permanent_seal', 100, 'completed'],
             );
+
+            // If Arweave upload was missing (e.g., wallet was unfunded at capture time), retry now
+            const subCheck = await query(
+              `SELECT arweave_id FROM submissions WHERE id = $1`,
+              [submissionId],
+            );
+            if (subCheck.rows.length > 0 && !subCheck.rows[0].arweave_id) {
+              const captureDir = join('captures', submissionId);
+              console.log(`[${submissionId}] Seal: retrying Arweave upload...`);
+              try {
+                const arweaveResult = await uploadToArweave(captureDir, submissionId);
+                await query(
+                  `UPDATE submissions SET arweave_id = $2, arweave_url = $3, updated_at = NOW() WHERE id = $1`,
+                  [submissionId, arweaveResult.id, arweaveResult.url],
+                );
+                console.log(`[${submissionId}] Seal: Arweave upload succeeded: ${arweaveResult.id}`);
+              } catch (arErr) {
+                console.error(`[${submissionId}] Seal: Arweave retry failed:`, arErr.message);
+              }
+            }
           }
         }
         break;

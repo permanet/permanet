@@ -35,7 +35,7 @@ export default function Extension() {
             color: 'var(--text-secondary)',
           }}
         >
-          Coming Soon — Expected March 15, 2026
+          Coming Soon — Under Chrome Web Store Review
         </div>
         <p
           style={{

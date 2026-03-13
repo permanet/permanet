@@ -66,10 +66,10 @@ export default function About() {
         Removal from Permanet does not remove it from Arweave.
       </p>
 
-      <h3>Why Arweave instead of IPFS?</h3>
+      <h3>Why Arweave?</h3>
       <p>
-        IPFS requires active pinning to keep files available — if the pinner
-        stops paying, your files disappear. Arweave uses a one-time payment
+        Most decentralized storage requires ongoing fees to keep files available —
+        stop paying, and your files disappear. Arweave uses a one-time payment
         endowment model: pay once, stored by the network indefinitely. No
         ongoing subscription. No institution required to keep paying.
       </p>

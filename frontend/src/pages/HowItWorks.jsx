@@ -75,8 +75,8 @@ export default function HowItWorks() {
 
       <h2>Why Arweave?</h2>
       <p>
-        Traditional decentralized storage (like IPFS) requires active pinning —
-        if the pinner stops paying, your files disappear. Arweave uses a
+        Most decentralized storage systems require ongoing fees —
+        stop paying, and your files disappear. Arweave uses a
         one-time payment endowment model: pay once, stored by the network
         indefinitely. No ongoing subscription. No institution required to keep
         paying.

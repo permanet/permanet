@@ -221,7 +221,7 @@ export default function Archive() {
             <a href="/extension" style={{ color: 'inherit', textDecoration: 'underline' }}>
               Chrome Extension
             </a>{' '}
-            (coming March 15) will let you capture these pages directly from your browser.
+            (coming soon) will let you capture these pages directly from your browser.
           </p>
         </div>
       )}
@@ -262,7 +262,7 @@ export default function Archive() {
                     textDecoration: 'none',
                   }}
                 >
-                  Chrome Extension — Coming March 15
+                  Chrome Extension — Coming Soon
                 </a>
               </p>
             </div>
